@@ -1,5 +1,7 @@
 set nocompatible
 
+set clipboard=unnamedplus
+
 set t_Co=256
 set background=dark
 
@@ -32,8 +34,12 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-cnoremap <c-r><c-d> <c-r>+
-nnoremap y "+y
-xnoremap y "+y
-nnoremap Y "+y$
+" Normal‑mode yank to system clipboard
+nnoremap <Leader>y "+y
+" Visual‑mode yank
+vnoremap <Leader>y "+y
+" Normal‑mode Yank-to-end‑of‑line
+nnoremap <Leader>Y "+y$
+" Command‑line: Ctrl‑D to paste from clipboard
+cnoremap <C-D> <C-R>+
 
