@@ -20,7 +20,7 @@ set shiftwidth=4
 set expandtab
 set nocp
 set cursorline
-hi CursorLine cterm=NONE ctermbg=DarkGray
+hi CursorLine cterm=NONE ctermbg=239
 
 set ruler
 
